@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #004600;
+        display: flex;
+        justify-content: center;
+      }
+      .name {
+        color: #fffffe;
+        display: flex;
+        justify-content: center;
+
+      }
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
+      }
+      .social-icons a {
+        color: #fffffe;
+        text-decoration: dotted;
+
+      }
+      .link {
+        background-color: #f9bcf9;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+      .link a {
+        color: #001e1d;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 200px;
+        flex-grow: 1;
+      }
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius:128px;
+      }
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+    
+    </style>
     <title>Stanley Xu</title>
     <meta charset="utf-8">
     <meta name="author" content="Stanley Xu"
   </head>
   <body>
+        
+    </body>
+   <div class="items">
     <div class="banner">
-      <img src="/thumbnails/profile photo.jpg" alt="Stanley Xu's headshot">
+      <img src="/thumbnails/profile photo.jpg" alt="Stanley Xu's headshot" class="banner-image">
+      
     </div>
     <div class="name">
       Stanley Xu
@@ -16,19 +81,25 @@
       <a href="https://www.linkedin.com/in/stanley-shengrong-xu/" target="_blank">
         Linkedin
       </a>
-    </div>
-    <div>
-      <a href="https://www.ceibs.edu/" target="_blank">
-        CEIBS
-      </a>
-    </div>
-    <div>
-      <a href="https://en.wikipedia.org/wiki/Shanghai" target="_blank">
-        Shanghai
-        
+      <a href="https://github.com/stanley-world" target="_blank">
+        Github
       </a>
     </div>
 
-    
+
+
+    <div class="link">
+      <img class="thumbnail"
+        src="https://www.ceibs.edu/sites/portal.prod.dpmgr.ceibs.edu/files/styles/crop_freeform/public/logo.png?itok=npqHAFzv">
+      <a target="_blank" href="https://www.ceibs.edu/">CEIBS</a>
+
+    </div>
+    <div class="link">
+      <img class="thumbnail"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pudong_Shanghai_November_2017_panorama.jpg/556px-Pudong_Shanghai_November_2017_panorama.jpg">
+        <a target="_blank" href="https://en.wikipedia.org/wiki/Shanghai">Shanghai</a>
+    </div>
+
+   </div>
   </body>
 </html>
